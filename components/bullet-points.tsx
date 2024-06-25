@@ -4,7 +4,7 @@ type BulletPointsProps = {
 
 export function BulletPoints({ items }: BulletPointsProps) {
   return (
-    <ul className="text-gold list-disc list-outside ml-5 space-y-1">
+    <ul className="text-gold/80 list-disc list-outside ml-5 space-y-1">
       {items.map((item, index) => (
         <li key={`${index}-${item})`}>
           <span className="text-text">{item}</span>
