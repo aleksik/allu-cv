@@ -219,6 +219,29 @@ const cvData: CVData = {
       ],
     },
     {
+      title: "Allu.io",
+      years: "2004-",
+      jobTitle: "Freelance Software Developer",
+      description: [
+        "I might occasionally take on interesting side projects or freelance development jobs.",
+      ],
+      bulletPoints: [],
+      keywords: [],
+      projects: [
+        {
+          name: "Nolla Cabins",
+          jobTitle: "Software Developer",
+          description: [],
+          bulletPoints: [
+            "Rebuilt and modernized an existing WordPress site with Next.js and Sanity CMS.",
+            "Implemented a versatile booking management system to support business scaling.",
+          ],
+          keywords: ["Next.js", "Typescript", "CMS", "Vercel"],
+          website: "https://nollacabins.com/",
+        },
+      ],
+    },
+    {
       title: "Mediasignal Oy",
       years: "2013-2018",
       jobTitle: "Software Developer",
