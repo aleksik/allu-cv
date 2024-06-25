@@ -220,7 +220,7 @@ const cvData: CVData = {
       ],
     },
     {
-      title: "Allu.io",
+      title: "Freelance work",
       years: "2004-",
       jobTitle: "Freelance Software Developer",
       description: [
