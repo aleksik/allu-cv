@@ -3,7 +3,7 @@ import { Keywords } from "@/components/keywords";
 import { Section } from "@/components/section";
 
 import data from "../lib/cv-data";
-import { WorkExperience } from "@/components/work-experience";
+import { Experience } from "@/components/experience";
 
 export default function CV() {
   return (
@@ -17,7 +17,15 @@ export default function CV() {
       <Section title="Work experience">
         <div className="flex flex-col">
           {data.workExperience.map((workExperience) => (
-            <WorkExperience key={workExperience.title} {...workExperience} />
+            <Experience key={workExperience.title} {...workExperience} />
+          ))}
+        </div>
+      </Section>
+
+      <Section title="Education">
+        <div className="flex flex-col">
+          {data.education.map((education) => (
+            <Experience tight key={education.title} {...education} />
           ))}
         </div>
       </Section>

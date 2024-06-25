@@ -1,14 +1,15 @@
 "use client";
 
-import { type WorkExperience } from "@/lib/cv-data";
+import { type Experience } from "@/lib/cv-data";
 import { BulletPoints } from "./bullet-points";
 import { Keywords } from "./keywords";
 import { Project } from "./project";
 import { useState } from "react";
+import { cn } from "@/lib/utils";
 
-type WorkExperienceProps = WorkExperience;
+type WorkExperienceProps = Experience & { tight?: boolean };
 
-export function WorkExperience({
+export function Experience({
   title,
   years,
   jobTitle,
@@ -18,6 +19,7 @@ export function WorkExperience({
   projects: allProjects,
   numOfProjectsToShow,
   showMoreButtonText,
+  tight = false,
 }: WorkExperienceProps) {
   const [showAllProjects, setShowAllProjects] = useState(
     numOfProjectsToShow === undefined ||
@@ -29,7 +31,12 @@ export function WorkExperience({
     : allProjects.slice(0, numOfProjectsToShow);
 
   return (
-    <div className="flex flex-col gap-2 border-b py-16 first:pt-0 last:border-none">
+    <div
+      className={cn(
+        "flex flex-col gap-2 border-b first:pt-0 last:border-none",
+        tight ? "py-6" : "py-16"
+      )}
+    >
       <div className="flex flex-row justify-between items-center">
         <div className="text-lg font-semibold">{title}</div>
         <div className="text-subtle text-sm">{years}</div>

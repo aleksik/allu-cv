@@ -7,10 +7,11 @@ type CVData = {
     email: string;
   };
   keySkills: string[];
-  workExperience: WorkExperience[];
+  workExperience: Experience[];
+  education: Experience[];
 };
 
-export type WorkExperience = {
+export type Experience = {
   title: string;
   years: string;
   jobTitle: string;
@@ -304,6 +305,35 @@ const cvData: CVData = {
           keywords: ["Javascript", "PHP", "CMS"],
         },
       ],
+    },
+  ],
+  education: [
+    {
+      title: "TAMK Tampere School of Applied Sciences",
+      jobTitle: "Batchelor of Arts and Media",
+      years: "2009-",
+      description: [],
+      bulletPoints: [],
+      keywords: [],
+      projects: [],
+    },
+    {
+      title: "Finnish Military Service",
+      jobTitle: "",
+      years: "2008",
+      description: [],
+      bulletPoints: [],
+      keywords: [],
+      projects: [],
+    },
+    {
+      title: "Uudenkaupungin lukio",
+      jobTitle: "High school",
+      years: "2004-2007",
+      description: [],
+      bulletPoints: [],
+      keywords: [],
+      projects: [],
     },
   ],
 };
