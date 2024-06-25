@@ -7,7 +7,7 @@ import { Experience } from "@/components/experience";
 
 export default function CV() {
   return (
-    <main className="container mx-auto max-w-screen-lg p-10 flex flex-col gap-12">
+    <main className="container mx-auto max-w-screen-lg p-4 sm:p-10 flex flex-col gap-12">
       <Header title={data.header.title} subtitle={data.header.subtitle} />
 
       <Section title="Key skills">
