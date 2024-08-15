@@ -61,8 +61,7 @@ const cvData: CVData = {
       bulletPoints: [
         "Developed a web app using React and Next.js.",
         "Developed serverless event-based backend services.",
-        "Implemented OpenAI GPT-o integration.",
-        "Developed an embedding-based system for detecting similar news articles.",
+        "Implemented AI intergation using several models.",
       ],
       keywords: [
         "Typescript",
@@ -71,7 +70,6 @@ const cvData: CVData = {
         "Tailwind",
         "SQL",
         "Langchain",
-        "OpenAI API",
         "Vector DB",
         "Vercel",
         "Event driven architecture",
