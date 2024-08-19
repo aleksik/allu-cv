@@ -53,32 +53,18 @@ const cvData: CVData = {
   workExperience: [
     {
       title: "Freepress.ai",
-      years: "2023-2024",
+      years: "2023 - Present",
       jobTitle: "Co-founder / Software Developer",
       description: [
-        "In the summer of 2023, I co-founded a startup to develop an AI-powered news aggregator that generates concise multi-source summaries of daily news events.",
+        "In summer 2023, I co-founded a startup to develop an AI-powered news application, designed to deliver personalized news tailored to users’ preferences.",
       ],
-      bulletPoints: [
-        "Developed a web app using React and Next.js.",
-        "Developed serverless event-based backend services.",
-        "Implemented AI intergation using several models.",
-      ],
-      keywords: [
-        "Typescript",
-        "React",
-        "Next.js",
-        "Tailwind",
-        "SQL",
-        "Langchain",
-        "Vector DB",
-        "Vercel",
-        "Event driven architecture",
-      ],
+      bulletPoints: [],
+      keywords: [],
       projects: [],
     },
     {
       title: "Digia Oyj",
-      years: "2018-2023",
+      years: "2018 - 2023",
       jobTitle: "Senior Software Developer",
       description: [
         "As a member of Digia's Skill Force team, I worked as a consultant for various large-scale customers. My role in customer teams varied from Senior Software Developer to Lead Frontend Developer.",
@@ -219,7 +205,7 @@ const cvData: CVData = {
     },
     {
       title: "Freelance work",
-      years: "2004-",
+      years: "2004 - Present",
       jobTitle: "Freelance Software Developer",
       description: [
         "I might occasionally take on interesting side projects or freelance development jobs.",
@@ -242,7 +228,7 @@ const cvData: CVData = {
     },
     {
       title: "Mediasignal Oy",
-      years: "2013-2018",
+      years: "2013 - 2018",
       jobTitle: "Software Developer",
       description: [
         "Worked as a software developer for consulting agency Mediasignal. I was responsible for developing customer solutions, usually as the sole developer on projects.",
@@ -304,12 +290,48 @@ const cvData: CVData = {
         },
       ],
     },
+    {
+      title: "Cygate Oy",
+      years: "2012 - 2013",
+      jobTitle: "Frontend developer",
+      description: [
+        "Developed and implemented proof-of-concept web-based digital signage tools, aimed to replace outdated legacy systems with modern, scalable solutions.",
+      ],
+      bulletPoints: [],
+      keywords: ["Digital Signage", "Javascript", "HTML5"],
+      numOfProjectsToShow: 0,
+      projects: [],
+    },
+    {
+      title: "HammerKit Oy",
+      years: "2011 - 2012",
+      jobTitle: "Solution developer",
+      description: [
+        "Developed advanced customer solutions using the HammerKit platform, pushing the boundaries of its capabilities to deliver innovative, customized applications.",
+      ],
+      bulletPoints: [],
+      keywords: ["PHP", "Javascript"],
+      numOfProjectsToShow: 0,
+      projects: [],
+    },
+    {
+      title: "AkuSolvers Oy",
+      years: "2007 - 2009",
+      jobTitle: "Web developer",
+      description: [
+        "Developed custom content management systems and solutions for a diverse range of clients.",
+      ],
+      bulletPoints: [],
+      keywords: ["PHP"],
+      numOfProjectsToShow: 0,
+      projects: [],
+    },
   ],
   education: [
     {
       title: "TAMK Tampere School of Applied Sciences",
-      jobTitle: "Batchelor of Arts and Media",
-      years: "2009-",
+      jobTitle: "Degree programme in Arts and Media (Interactive Media)",
+      years: "2009 - 2011",
       description: [],
       bulletPoints: [],
       keywords: [],
@@ -327,7 +349,7 @@ const cvData: CVData = {
     {
       title: "Uudenkaupungin lukio",
       jobTitle: "High school",
-      years: "2004-2007",
+      years: "2004 - 2007",
       description: [],
       bulletPoints: [],
       keywords: [],
