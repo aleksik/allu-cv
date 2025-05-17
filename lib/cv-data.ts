@@ -21,6 +21,7 @@ export type Experience = {
   projects: Project[];
   numOfProjectsToShow?: number;
   showMoreButtonText?: string;
+  website?: string;
 };
 
 export type Project = {
@@ -54,13 +55,14 @@ const cvData: CVData = {
     {
       title: "Freepress.ai",
       years: "2023 - Present",
-      jobTitle: "Co-founder / Software Developer",
+      jobTitle: "Co-founder / Lead Software Developer",
       description: [
         "In summer 2023, I co-founded a startup to develop an AI-powered news application, designed to deliver personalized news tailored to users’ preferences.",
       ],
       bulletPoints: [],
       keywords: [],
       projects: [],
+      website: "https://freepress.ai"
     },
     {
       title: "Digia Oyj",
@@ -106,10 +108,10 @@ const cvData: CVData = {
             "I was part of the team during four separate campaigns.",
           ],
           bulletPoints: [
-            "Worked on ab e-commerce storefront and admin interface using React.",
-            "Worked on backend services using Clojure and PostgresSQL.",
-            "Monitoring and on-call during the campaign.",
-            "Implemented load testing using Gatling.",
+            "Worked on an e-commerce storefront and admin interface with React.",
+            "Worked on backend services with Clojure and PostgresSQL.",
+            "Monitoring and on-call during the campaigns.",
+            "Implemented load testing with Gatling.",
           ],
           keywords: ["E-commerce", "React", "Javascript", "Clojure", "AWS"],
           website: "https://hullutpaivat.com/",
@@ -121,8 +123,8 @@ const cvData: CVData = {
             "Worked as a developer on an award-winning open source design system for the City of Helsinki.",
           ],
           bulletPoints: [
-            "Implemented components for a highly accessible, audited, UI component library for React.",
-            "Provided support for projects using Helsinki Design System.",
+            "Implemented components for ahighly accessible, audited, UI component library for React.",
+            "Provided support for developers using Helsinki Design System.",
           ],
           keywords: ["React", "Typescript", "Accessibility", "Open source"],
           website: "https://hds.hel.fi/",
