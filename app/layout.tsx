@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import { PostHogProvider } from "@/components/posthog-provider";
 
 const font = Roboto_Mono({ subsets: ["latin"] });
 
@@ -17,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="dark">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <PostHogProvider>
+          {children}
+        </PostHogProvider>
+      </body>
     </html>
   );
 }

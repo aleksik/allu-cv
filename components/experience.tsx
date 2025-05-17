@@ -6,6 +6,7 @@ import { Keywords } from "./keywords";
 import { Project } from "./project";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { usePostHog } from "posthog-js/react";
 
 type WorkExperienceProps = Experience & { tight?: boolean };
 
@@ -21,9 +22,11 @@ export function Experience({
   showMoreButtonText,
   tight = false,
 }: WorkExperienceProps) {
+  const posthog = usePostHog();
+
   const [showAllProjects, setShowAllProjects] = useState(
     numOfProjectsToShow === undefined ||
-      numOfProjectsToShow === allProjects.length
+    numOfProjectsToShow === allProjects.length
   );
 
   const projects = showAllProjects
@@ -63,7 +66,10 @@ export function Experience({
         {showAllProjects === false && (
           <div className="flex flex-row justify-center">
             <button
-              onClick={() => setShowAllProjects(true)}
+              onClick={() => {
+                setShowAllProjects(true);
+                posthog.capture('show_all', { job: title })
+              }}
               className="text-iris hover:bg-iris/30 py-2 px-3 rounded-full text-xs transition-colors"
             >
               {showMoreButtonText}
